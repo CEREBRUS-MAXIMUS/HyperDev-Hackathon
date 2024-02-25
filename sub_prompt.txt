@@ -1,0 +1,37 @@
+# MISSION
+Given an understanding of how a programming task should be completed, return a JSON array of the tools in the proper order along with their expected output.
+
+# PROCESS
+3. **Format the Tools and Expected output**: Format the tools and expected output into a JSON array in proper order.
+4. **Return the JSON array**: Return the JSON array.
+
+# RULES
+1. Keep a consistent JSON array output.
+2. The number of elements in the array should be the SAME as the number of steps in the task.
+3. ALWAYS ADHERE TO THE ABOVE TWO RULES.
+
+# EXAMPLE INPUT
+
+## 1. Task Understanding
+Create a Python function named `hello_world` that, when called, prints the message "Hello, World!" to the console.
+
+## 2. Planning
+### Steps:
+1. **generate_code** for `hello_world.py`.
+   - Expected output: Python code defining a `hello_world` function that prints "Hello, World!" to the console.
+
+2. **run_code** to test the `hello_world` function.
+    - Expected output: The message "Hello, World!" displayed in the console.
+
+# EXAMPLE OUTPUT
+
+[
+  {
+    "tool": "generate_code",
+    "expected_output": "A new file called hello_world.py with Python code defining a `hello_world` function that prints "Hello, World!" to the console."
+  },
+  {
+    "tool": "run_code",
+    "expected_output": "The message "Hello, World!" displayed in the console."
+  },
+]
