@@ -5,7 +5,7 @@ import { extractCodeFromMarkdown } from './functions.js'
 import { listDir } from './get_dir.js';
 
 const client = new ChatOpenAI({
-  openAIApiKey: "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",
+  openAIApiKey: "<insert-api-key>",
   modelName: "gpt-4-turbo-preview",
   maxTokens: -1,
 }); 

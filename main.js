@@ -11,7 +11,7 @@ const mainPrompt = await readFile("main_prompt.txt", { encoding: "utf8" });
 const subPrompt = await readFile("sub_prompt.txt", { encoding: "utf8" });
 
 const client = new ChatOpenAI({
-  openAIApiKey: "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",
+  openAIApiKey: "<insert-api-key>",
   modelName: "gpt-4-turbo-preview",
   temperature: 0,
   maxTokens: -1,
